@@ -25,10 +25,82 @@
           </div>
         </li>
         <li class="has-form">
-         <a class="button" data-reveal-id="andBookmark">Add New Bookmark</a> 
+         <a class="button" data-reveal-id="addBookmark">Add New Bookmark</a> 
         </li>
       </ul>
     </section>
   </nav>
+
+  <div class="row" style="padding-top: 20px;">
+    <div class="large-12 columns">
+      <div class="row">
+        <div class="columns small-2 text-center"><a class="th radius"><img src="img/angular20.jpg"></a></div>
+        <div class="columns small-10">
+          <p>AngularJS 2.0 is a framework for mobile apps <br><a href="http://blog.angularjs.org/2014/03/angular-20.html" target='_blank'>http://blog.angularjs.org/2014/03/angular-20.html</a></p>
+
+          <span class="label round">Angular</span>
+          <span class="label secondary round">Angular Advanced</span>
+          <span class="label alert round">MVC</span>
+        </div>
+     </div>
+     <hr/>
+     <div class="row"> 
+      <div class="columns small-2 text-center"><a class="th radius"><img src="img/angular20.jpg"></a></div>
+        <div class="columns small-10">
+          <p>Angular and Durandal Converge<br><a href="http://blog.angularjs.org/2014/03/angular-20.html" target='_blank'>http://blog.angularjs.org/2014/03/angular-20.html</a></p>
+
+          <span class="label round">Angular</span>
+          <span class="label secondary round">Durandal</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="pagination-centered">
+    <ul class="pagination">
+      <li class="arrow unavailable"><a href="">&laquo;</a></li>
+      <li class="current"><a href="">1</a></li>
+      <li><a href="">2</a></li>
+      <li class="arrow"><a href="">&raquo;</a></li>
+    </ul>
+  </div>
+
+  <div id="addBookmark" class="reveal-modal medium" data-reveal>
+    <h2>New Bookmark</h2>
+    <form>
+      <div class="row">
+        <div class="large-12 columns">
+          <label class='error'>URL
+            <input type="url" name="url" placeholder="Add bookmark URL" required/>
+          </label>
+          <small class="error">Please enter valid URL - should begin with http or https</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label class='error'>Title
+            <input type="text" name="title" placeholder="Add Bookmark Title" required/>
+          </label>
+          <small class="error">Please enter Bookmark Title</small>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label class='error'>Tags
+            <input type="text" name="tags" placeholder="comma separated tags i.e. Angular, JQuery, Foundation" required/>
+          </label>
+          <small class="error">Please enter valid URL - should begin with http or https</small>
+        </div>
+      </div>
+
+      <button type='submit' class="button expand">Save Bookmark</button>
+    </form>
+    <a class="close-reveal-modal">&#215</a>
+  </div>
+
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/foundation/js/foundation.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

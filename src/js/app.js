@@ -1,3 +1,5 @@
 'use strict';
 
-angular.module('myApp', ['myApp.controllers', 'myApp.filters', 'ngAnimate']);
+angular.module('myApp', []).run(function($document){
+	$document.foundation();
+});
