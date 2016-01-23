@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="bower_components/foundation/css/foundation.css">
 </head>
 <body ng-app="myApp">
-
+  <nav class="top-bar" data-topbar="">
+    <ul class="title-area">
+      <li class="name"><h1><a href="#">Pin It - <i>The Universal Bookmarking App</i></a></h1></li>
+      <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+    </ul>
+    <section class="top-bar-section">
+      <ul class="right">
+        <li class="has-form">
+          <div class="row collapse">
+            <div class="small-9 columns">
+             <input type="text" placeholder="Find Bookmarks">
+            </div>
+            <div class="small-3 columns">
+             <a href="#" class="alert button expand">Search</a>
+            </div>
+          </div>
+        </li>
+        <li class="has-form">
+         <a class="button" data-reveal-id="andBookmark">Add New Bookmark</a> 
+        </li>
+      </ul>
+    </section>
+  </nav>
 </body>
 </html>
